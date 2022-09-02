@@ -1,0 +1,10 @@
+abuse
+ads
+crypto
+drugs
+fraud
+malware
+phishing
+ransomware
+scam
+urlshortener

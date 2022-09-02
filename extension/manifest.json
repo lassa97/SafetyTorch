@@ -1,0 +1,19 @@
+{
+    "name": "DNSBuster",
+    "description": "Bloqueador de sitios maliciosos",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "permissions": [
+        "webRequest"
+    ],
+    "host_permissions": [
+        "*://*/*"
+    ],
+    "action": {
+        "default_popup": "index.html",
+        "default_title": "DNSBuster"
+    },
+    "background": {
+        "service_worker": "script.js"
+    }
+}
