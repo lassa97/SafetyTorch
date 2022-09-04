@@ -1,0 +1,1 @@
+44 */1 * * * cd $HOME/SafetyTorch/api/ && $HOME/SafetyTorch/api/venv/bin/python main.py > /tmp/cronlog.txt 2>&1

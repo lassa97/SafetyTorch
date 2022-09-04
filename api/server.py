@@ -9,14 +9,12 @@ app = Flask(__name__)
 
 @app.route("/")
 def root():
-    """
     if cache.queried:
         cache.queried = False
         return render_template('index.html', url=cache.url, category=cache.category, link=cache.link, threat=cache.threat, blocklist=cache.blocklist)
     else:
         return render_template('error.html', code=404), 404
-    """
-    return render_template('index.html', url=cache.url, category=cache.category, link=cache.link, threat=cache.threat, blocklist=cache.blocklist)
+    # return render_template('index.html', url=cache.url, category=cache.category, link=cache.link, threat=cache.threat, blocklist=cache.blocklist)
 
 @app.route("/check/<resource>")
 def check_resource(resource):
@@ -45,7 +43,7 @@ def check_resource(resource):
             "blocked": details[0],
             "blocklist": details[1],
             "category": details[2],
-            "safe_url": "http://127.0.0.1:5000/"
+            "safe_url": "https://bl.lassa.es/"
         }
     )
     response.headers.add('Access-Control-Allow-Origin', '*')
