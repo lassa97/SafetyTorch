@@ -14,7 +14,7 @@ class Worker:
             subprocess.call("cd lists && find . -maxdepth 1 -name '*{CATEGORY}*' -exec grep -v '^#' {{}} > filtered/{CATEGORY}.txt \;".format(CATEGORY=category), shell=True)
 
     @staticmethod
-    def categorise_lists(categories=None):
+    def categorize_lists(categories=None):
         output = {}
         for category in categories:
             with open('lists/filtered/{CATEGORY}.txt'.format(CATEGORY=category), 'r') as infile:

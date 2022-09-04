@@ -6,4 +6,4 @@ with open('categories.txt', 'r') as file:
 
 Worker.get_lists('../lists.txt')
 Worker.filter_lists(categories)
-Worker.categorise_lists(categories)
+Worker.categorize_lists(categories)

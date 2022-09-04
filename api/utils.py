@@ -62,6 +62,15 @@ class Checker:
                 continue
         return (blocked, None, None)
 
+class Cache:
+    def __init__(self):
+        self.url = None
+        self.category = None
+        self.link = None
+        self.threat = None
+        self.blocklist = None
+        self.queried = False
+
 # check_ip("127.0.0.2")
 
 """

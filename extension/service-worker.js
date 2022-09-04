@@ -1,5 +1,4 @@
-const URL = 'http://127.0.0.1:5000/check/';
-const INCIBE = 'https://www.incibe.es/';
+const URL = 'https://bl.lassa.es/check/';
 
 chrome.tabs.onCreated.addListener(async tab => {
     checkConnection(tab.url);
@@ -16,6 +15,6 @@ async function checkConnection(url) {
     let data = await response.json();
 
     if (data.blocked) {
-        chrome.tabs.update({ url: INCIBE, active: true });
+        chrome.tabs.update({ url: data.safe_url, active: true });
     }
 }
