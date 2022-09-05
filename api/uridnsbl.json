@@ -1,0 +1,22 @@
+{
+    "rhsbl.sorbs.net": {
+        "127.0.0.11": "spam",
+        "127.0.0.12": "spam"
+    },
+    "dbl.spamhaus.org": {
+        "127.0.1.102": "spam",
+        "127.0.1.103": "cybersquatting",
+        "127.0.1.104": "phishing",
+        "127.0.1.105": "malware",
+        "127.0.1.106": "botnet"
+    },
+    "uribl.spameatingmonkey.net": {
+        "127.0.0.2": "spam"
+    },
+    "multi.surbl.org": {
+        "127.0.0.8": "phishing",
+        "127.0.0.16": "malware",
+        "127.0.0.64": "botnet",
+        "127.0.0.128": "botnet"
+    }
+}

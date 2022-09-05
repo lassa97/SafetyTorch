@@ -9,7 +9,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def root():
-    if cache.queried:
+    if cache.blocked:
         cache.queried = False
         return render_template('index.html', url=cache.url, category=cache.category, link=cache.link, threat=cache.threat, blocklist=cache.blocklist)
     else:
@@ -46,12 +46,15 @@ def check_resource(resource):
             "safe_url": "https://bl.lassa.es/"
         }
     )
+
+    with open('resources.json', 'r') as file:
+        resources = json.load(file)
+
     response.headers.add('Access-Control-Allow-Origin', '*')
     cache.url = base_url
     cache.category = details[2]
-    cache.link = "https://www.youtube.com/watch?v=kP4sVszgC_c&list=PLr5GsywSn9d8pUMODmSqxtJ27fGH6N4Z-&index=21"
-    cache.threat = "adware"
-    cache.blocklist = "Ads"
+    cache.link = 
+    cache.blocklist = details[1]
     cache.queried = True
     return response
 

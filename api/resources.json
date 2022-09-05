@@ -1,0 +1,12 @@
+{
+    "spam": "https://www.youtube.com/watch?v=ZHNHgYJS3Cs&list=PLr5GsywSn9d8pUMODmSqxtJ27fGH6N4Z-&index=24",
+    "phishing": "https://www.youtube.com/watch?v=uhzV5-iFb5E&list=PLr5GsywSn9d8pUMODmSqxtJ27fGH6N4Z-&index=5",
+    "malware": "https://www.youtube.com/watch?v=11Ww1WF0-0s&list=PLr5GsywSn9d8pUMODmSqxtJ27fGH6N4Z-&index=10",
+    "ransomware": "https://www.youtube.com/watch?v=vqwtLVfg7ns&list=PLr5GsywSn9d8pUMODmSqxtJ27fGH6N4Z-&index=11",
+    "botnet": "https://www.youtube.com/watch?v=BoryzRzu2y4&list=PLr5GsywSn9d8pUMODmSqxtJ27fGH6N4Z-&index=15",
+    "vulnerabilidad": "https://www.youtube.com/watch?v=VkS56Zz-iEo&list=PLr5GsywSn9d8pUMODmSqxtJ27fGH6N4Z-&index=14",
+    "cybersquatting": "https://www.youtube.com/watch?v=UvmWit3yA68&list=PLr5GsywSn9d8pUMODmSqxtJ27fGH6N4Z-&index=33",
+    "Man-in-the-Middle": "https://www.youtube.com/watch?v=XigK57MTk7Y&list=PLr5GsywSn9d8pUMODmSqxtJ27fGH6N4Z-&index=23",
+    "ads": "https://www.youtube.com/watch?v=kP4sVszgC_c&list=PLr5GsywSn9d8pUMODmSqxtJ27fGH6N4Z-&index=21",
+    "crypto": "https://www.youtube.com/watch?v=y-AdKE7Silo&list=PLr5GsywSn9d8pUMODmSqxtJ27fGH6N4Z-&index=29"
+}

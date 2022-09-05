@@ -1,0 +1,75 @@
+{
+    "dnsbl.sorbs.net": {
+        "127.0.0.2": "Man-in-the-Middle",
+        "127.0.0.3": "Man-in-the-Middle",
+        "127.0.0.4": "Man-in-the-Middle",
+        "127.0.0.5": "spam",
+        "127.0.0.6": "spam",
+        "127.0.0.7": "vulnerabilidad",
+        "127.0.0.9": "botnet",
+        "127.0.0.14": "Man-in-the-Middle"
+    },
+    "spam.sorbs.net": {
+        "127.0.0.6": "spam"
+    },
+    "all.spamrats.com": {
+        "127.0.0.36": "botnet",
+        "127.0.0.37": "spam",
+        "127.0.0.38": "spam",
+        "127.0.0.43": "botnet"
+    },
+    "zen.spamhaus.org": {
+        "127.0.0.2": "Spam",
+        "127.0.0.3": "vulnerabilidad"
+    },
+    "bl.blocklist.de": {
+        "127.0.0.2": "botnet",
+        "127.0.0.3": "botnet",
+        "127.0.0.4": "botnet",
+        "127.0.0.5": "botnet",
+        "127.0.0.6": "botnet",
+        "127.0.0.7": "botnet",
+        "127.0.0.8": "botnet",
+        "127.0.0.9": "botnet",
+        "127.0.0.10": "botnet",
+        "127.0.0.11": "botnet",
+        "127.0.0.12": "botnet",
+        "127.0.0.13": "botnet",
+        "127.0.0.14": "botnet",
+        "127.0.0.15": "botnet",
+        "127.0.0.16": "botnet",
+        "127.0.0.17": "botnet",
+        "127.0.0.18": "botnet",
+        "127.0.0.19": "botnet",
+        "127.0.0.20": "botnet",
+        "127.0.0.21": "botnet",
+        "127.0.0.22": "botnet"
+    },
+    "bl.spameatingmonkey.net": {
+        "127.0.0.2": "spam"
+    },
+    "netbl.spameatingmonkey.net": {
+        "127.0.0.2": "botnet"
+    },
+    "b.barracudacentral.org": {
+        "127.0.0.2": "spam"
+    },
+    "hostkarma.junkemailfilter.com": {
+        "127.0.0.2": "spam"
+    },
+    "truncate.gdudb.net": {
+        "127.0.0.2": "spam"
+    },
+    "ubl.unsubscore.com": {
+        "127.0.0.2": "spam"
+    },
+    "bl.nosolicitado.org": {
+        "127.0.0.2": "spam"
+    },
+    "rbl.interserver.net": {
+        "127.0.0.2": "spam"
+    },
+    "orvedb.aupads.org": {
+        "127.0.0.3": "spam"
+    }
+}

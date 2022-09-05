@@ -147,14 +147,12 @@
                 <h1>¡Peligro!</h1>
             </div>
             <h2><i>{{ url }}</i> es malicioso<sup>1</sup></h2>
-            <!--<h3>Aparece en {{ blocklist }}</h3>-->
             <p class="home-btn">Categoria: {{ category }}</p>
-            <!--<p class="contact-btn">{{ blocklist }}</p>-->
             <div class="notfound-social">
-                <h3>¿Que es el <a href="{{ link }}" target="_blank">adware</a>?</h3>
+                <h3>¿Que es <a href="{{ link }}" target="_blank">{{ category }}</a>?</h3>
                 <iframe width="640" height="480"
-                    src="https://www.youtube.com/embed/uhzV5-iFb5E?list=PLr5GsywSn9d8pUMODmSqxtJ27fGH6N4Z-"
-                    title="¿Qué es el phishing? | #AprendeCiberseguridad con INCIBE" frameborder="0"
+                    src="{{ link }}"
+                    frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
                 <h3>[1]: Aparece en la lista {{ blocklist }}</h3>
