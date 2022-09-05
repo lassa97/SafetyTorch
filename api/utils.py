@@ -65,4 +65,4 @@ class Checker:
                 continue
             except dns.resolver.NoAnswer:
                 continue
-        return (blocked, None, None)
+        return (blocked, None, None, None)

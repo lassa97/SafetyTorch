@@ -10,17 +10,15 @@ app = Flask(__name__)
 @app.route("/")
 def root():
     if cache.blocked:
-        cache.queried = False
-        return render_template('index.html', url=cache.url, category=cache.category, link=cache.link, threat=cache.threat, blocklist=cache.blocklist)
+        cache.blocked = False
+        return render_template('index.html', url=cache.url, category=cache.category, link=cache.link, blocklist=cache.blocklist)
     else:
         return render_template('error.html', code=404), 404
-    # return render_template('index.html', url=cache.url, category=cache.category, link=cache.link, threat=cache.threat, blocklist=cache.blocklist)
 
 @app.route("/check/<resource>")
 def check_resource(resource):
     url, base_url = Utils.parse_url(resource)
     ip_address = iptools.ipv4.validate_ip(base_url)
-
     """
     Comprueba la dirección IP de un dominio, siempre que el nombre de dominio no se haya identificado antes
     if ip_address:
@@ -47,15 +45,13 @@ def check_resource(resource):
         }
     )
 
-    with open('resources.json', 'r') as file:
-        resources = json.load(file)
-
     response.headers.add('Access-Control-Allow-Origin', '*')
     cache.url = base_url
     cache.category = details[2]
-    cache.link = 
+    cache.link = details[3]
     cache.blocklist = details[1]
-    cache.queried = True
+    if details[0]:
+        cache.blocked = True
     return response
 
 @app.errorhandler(404)

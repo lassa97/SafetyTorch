@@ -6,6 +6,7 @@
         "127.0.0.5": "spam",
         "127.0.0.6": "spam",
         "127.0.0.7": "vulnerabilidad",
+	"127.0.0.8": "vulnerabilidad",
         "127.0.0.9": "botnet",
         "127.0.0.14": "Man-in-the-Middle"
     },
